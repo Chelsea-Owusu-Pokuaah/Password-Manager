@@ -10,10 +10,9 @@ public class PasswordManager1 {
     public static void main(String[] args){
 
     try{
-        for(int i =0; i<4;i++){
-            try (PrintWriter writer = new PrintWriter(new FileWriter("passwordDb.txt"))) {
-                writer.write("Amen");
-                System.out.println("I work");
+        try (PrintWriter writer = new PrintWriter(new FileWriter("passwordDb.txt"))) {
+            for(int i =0; i<4;i++){
+                writer.println("Amen");
             }
         }
         BufferedReader reader = new BufferedReader( new FileReader("passwordDb.txt"));
