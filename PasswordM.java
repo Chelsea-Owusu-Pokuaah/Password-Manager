@@ -1,5 +1,6 @@
 /*
  * This class is the email class which will be used to store emails
+ * 
  */
 
 import java.util.Scanner;
